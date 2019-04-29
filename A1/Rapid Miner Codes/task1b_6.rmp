@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.2.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.2.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="productivity:execute_process" compatibility="9.2.000" expanded="true" height="68" name="Execute task1b_5" width="90" x="45" y="34">
+        <parameter key="process_location" value="task1b_5"/>
+        <parameter key="use_input" value="true"/>
+        <parameter key="store_output" value="false"/>
+        <parameter key="propagate_metadata_recursively" value="true"/>
+        <parameter key="cache_process" value="true"/>
+        <list key="macros"/>
+        <parameter key="fail_for_unknown_macros" value="true"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace" width="90" x="179" y="34">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="A"/>
+        <parameter key="replace_by" value="a"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (2)" width="90" x="313" y="34">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="B"/>
+        <parameter key="replace_by" value="b"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (3)" width="90" x="45" y="136">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="C"/>
+        <parameter key="replace_by" value="c"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (4)" width="90" x="179" y="136">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="D"/>
+        <parameter key="replace_by" value="d"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (5)" width="90" x="313" y="136">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="E"/>
+        <parameter key="replace_by" value="e"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (6)" width="90" x="45" y="238">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="F"/>
+        <parameter key="replace_by" value="f"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (7)" width="90" x="179" y="238">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="G"/>
+        <parameter key="replace_by" value="g"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (8)" width="90" x="313" y="238">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="H"/>
+        <parameter key="replace_by" value="h"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (9)" width="90" x="45" y="340">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="I"/>
+        <parameter key="replace_by" value="i"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (10)" width="90" x="179" y="340">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="J"/>
+        <parameter key="replace_by" value="j"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (11)" width="90" x="313" y="340">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="K"/>
+        <parameter key="replace_by" value="k"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (12)" width="90" x="45" y="442">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="L"/>
+        <parameter key="replace_by" value="l"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (13)" width="90" x="179" y="442">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="M"/>
+        <parameter key="replace_by" value="m"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (14)" width="90" x="313" y="442">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="N"/>
+        <parameter key="replace_by" value="n"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (15)" width="90" x="45" y="544">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="O"/>
+        <parameter key="replace_by" value="o"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (16)" width="90" x="179" y="544">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="P"/>
+        <parameter key="replace_by" value="p"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (17)" width="90" x="313" y="544">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="Q"/>
+        <parameter key="replace_by" value="q"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (18)" width="90" x="45" y="646">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="R"/>
+        <parameter key="replace_by" value="r"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (19)" width="90" x="179" y="646">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="S"/>
+        <parameter key="replace_by" value="s"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (20)" width="90" x="313" y="646">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="T"/>
+        <parameter key="replace_by" value="t"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (21)" width="90" x="45" y="748">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="U"/>
+        <parameter key="replace_by" value="u"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (22)" width="90" x="179" y="748">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="V"/>
+        <parameter key="replace_by" value="v"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (23)" width="90" x="313" y="748">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="W"/>
+        <parameter key="replace_by" value="w"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (24)" width="90" x="45" y="850">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="X"/>
+        <parameter key="replace_by" value="x"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (25)" width="90" x="179" y="850">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="Y"/>
+        <parameter key="replace_by" value="y"/>
+      </operator>
+      <operator activated="true" class="replace" compatibility="9.2.000" expanded="true" height="82" name="Replace (26)" width="90" x="313" y="850">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="name"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="replace_what" value="Z"/>
+        <parameter key="replace_by" value="z"/>
+      </operator>
+      <connect from_op="Execute task1b_5" from_port="result 1" to_op="Replace" to_port="example set input"/>
+      <connect from_op="Replace" from_port="example set output" to_op="Replace (2)" to_port="example set input"/>
+      <connect from_op="Replace (2)" from_port="example set output" to_op="Replace (3)" to_port="example set input"/>
+      <connect from_op="Replace (3)" from_port="example set output" to_op="Replace (4)" to_port="example set input"/>
+      <connect from_op="Replace (4)" from_port="example set output" to_op="Replace (5)" to_port="example set input"/>
+      <connect from_op="Replace (5)" from_port="example set output" to_op="Replace (6)" to_port="example set input"/>
+      <connect from_op="Replace (6)" from_port="example set output" to_op="Replace (7)" to_port="example set input"/>
+      <connect from_op="Replace (7)" from_port="example set output" to_op="Replace (8)" to_port="example set input"/>
+      <connect from_op="Replace (8)" from_port="example set output" to_op="Replace (9)" to_port="example set input"/>
+      <connect from_op="Replace (9)" from_port="example set output" to_op="Replace (10)" to_port="example set input"/>
+      <connect from_op="Replace (10)" from_port="example set output" to_op="Replace (11)" to_port="example set input"/>
+      <connect from_op="Replace (11)" from_port="example set output" to_op="Replace (12)" to_port="example set input"/>
+      <connect from_op="Replace (12)" from_port="example set output" to_op="Replace (13)" to_port="example set input"/>
+      <connect from_op="Replace (13)" from_port="example set output" to_op="Replace (14)" to_port="example set input"/>
+      <connect from_op="Replace (14)" from_port="example set output" to_op="Replace (15)" to_port="example set input"/>
+      <connect from_op="Replace (15)" from_port="example set output" to_op="Replace (16)" to_port="example set input"/>
+      <connect from_op="Replace (16)" from_port="example set output" to_op="Replace (17)" to_port="example set input"/>
+      <connect from_op="Replace (17)" from_port="example set output" to_op="Replace (18)" to_port="example set input"/>
+      <connect from_op="Replace (18)" from_port="example set output" to_op="Replace (19)" to_port="example set input"/>
+      <connect from_op="Replace (19)" from_port="example set output" to_op="Replace (20)" to_port="example set input"/>
+      <connect from_op="Replace (20)" from_port="example set output" to_op="Replace (21)" to_port="example set input"/>
+      <connect from_op="Replace (21)" from_port="example set output" to_op="Replace (22)" to_port="example set input"/>
+      <connect from_op="Replace (22)" from_port="example set output" to_op="Replace (23)" to_port="example set input"/>
+      <connect from_op="Replace (23)" from_port="example set output" to_op="Replace (24)" to_port="example set input"/>
+      <connect from_op="Replace (24)" from_port="example set output" to_op="Replace (25)" to_port="example set input"/>
+      <connect from_op="Replace (25)" from_port="example set output" to_op="Replace (26)" to_port="example set input"/>
+      <connect from_op="Replace (26)" from_port="example set output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
