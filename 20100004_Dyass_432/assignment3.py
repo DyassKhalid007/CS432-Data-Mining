@@ -47,15 +47,23 @@ NaiveBayes.fit(xTrain,yTrain)
 #checking score on xTrain and yTrain
 print("Accuracy on training data:",NaiveBayes.score(xTrain,yTrain))
 print("Accuracy on testing data:",NaiveBayes.score(xTest,yTest))
+#predicting the testing data set
 y_pred = NaiveBayes.predict(xTest)
+#calculating the prediction probabilities
 y_probas = NaiveBayes.predict_proba(xTest)
+#computing the confusion matrix now
 print("Confusion Matrix:")
 print(confusion_matrix(yTest,y_pred))
+#computing the F1 score 
 print("F1 Score:")
 print(f1_score(yTest,y_pred,average="macro"))
+#Plotting the ROC curve based on testing data
 print("Plottong ROC Curves")
+#plotting the the roc curve
 skplt.metrics.plot_roc(yTest, y_probas)
+#saving the curve
 plt.savefig('NaiveBayes ROC.png')
+#showing the curve
 plt.show()
 
 
@@ -63,29 +71,44 @@ plt.show()
 
 #Decision tree starting from here
 clf = tree.DecisionTreeClassifier()
+#fitting the decision tree
 clf.fit(xTrain,yTrain)
-
+#Checking accuracy on the training data
 print("Accuracy on training data:",clf.score(xTrain,yTrain))
+#Checking the accuracy on the testing data
 print("Accuracy on testing data:",clf.score(xTest,yTest))
+#Predicting on the testing data
 y_pred = clf.predict(xTest)
+#Calculating the prediction probabilities
 y_probas = clf.predict_proba(xTest)
+#Plotting the confusion matrix
 print(confusion_matrix(yTest,y_pred))
+#Calculating the F1 score
 print("F1 Score:")
 print(f1_score(yTest,y_pred,average="macro"))
+#Plotting the ROC curve
 print("Plottong ROC Curves")
 skplt.metrics.plot_roc(yTest, y_probas)
+#Saving the ROC Curve
 plt.savefig('Decision Trees ROC.png')
 plt.show()
 
 
 
 #K means starting here
-kmeans = KMeans(n_clusters=6)
+#change n here for cluster center
+kmeans = KMeans(n_clusters=5)
+#Fitting the classifier
 kmeans.fit(xTrain)
+#Accuracy on the training data
 print("Accuracy on training data:",kmeans.score(xTrain,yTrain))
+#Accuracy on the testing data
 print("Accuracy on testing data:",kmeans.score(xTest,yTest))
+#Predicting  on testing data
 y_pred = kmeans.predict(xTest)
+#Calculating the confusion matrix
 print(confusion_matrix(yTest,y_pred))
+#Calculating the f1 score using the metric of macro
 print("F1 Score:")
 print(f1_score(yTest,y_pred,average="macro"))
 
